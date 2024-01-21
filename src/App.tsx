@@ -19,13 +19,13 @@ function App() {
 					<Navbar />
 					<Hero />
 				</div>
-				<About />
-				<Experience />
+				<About idName='about' />
+				<Experience idName='experience' />
 				<Tech />
-				<Works />
-				<Feedbacks />
+				<Works idName='work' />
+				<Feedbacks idName='feedback' />
 				<div className='relative z-0'>
-					<Contact />
+					<Contact idName='contact' />
 					<StarsCanvas />
 				</div>
 			</div>

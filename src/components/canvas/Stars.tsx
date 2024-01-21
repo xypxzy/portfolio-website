@@ -9,7 +9,7 @@ const Stars = () => {
 	const sphere = random.inSphere(new Float64Array(5000), { radius: 1.2 })
 	const sphere32 = new Float32Array(sphere)
 
-	useFrame((state, delta) => {
+	useFrame((_, delta) => {
 		if (ref.current) {
 			const currentRef = ref.current as { rotation: { x: number; y: number } }
 			currentRef.rotation.x -= delta / 10
